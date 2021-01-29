@@ -1,0 +1,48 @@
+Script started on Thu Nov 14 21:46:19 2019
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+[?1034hbash-3.2$ g++ -std=sc[K[Kc++11 hzd0011_hw4.cpp -o hw4
+bash-3.2$ ./hw4
+
+Alice is sending request to Cathy for session key with Bob
+Sent Message: Alice || Bob || r1
+
+Cathy is receiving request from Alice for session key with Bob
+Received message: Alice || Bob || r1
+
+Cathy is sending message with session key to Alice
+Unencrypted message: Alice || Bob || r1 || ks || {Alice || Thu Nov 14 21:46:42 2019 || ks}kB
+
+Alice has received message with session key from Cathy
+Encrypted message: {Alice || Bob || r1 || ks || {Alice || Thu Nov 14 21:46:42 2019 || ks}kB}kA
+
+Alice is sending session key to Bob
+Unencrypted message: Alice || Thu Nov 14 21:46:42 2019 || ks
+
+Bob has recieved session key from Alice
+Encrypted message: {Alice || Thu Nov 14 21:46:42 2019 || ks}kB
+
+Bob is sending nonce to Alice
+Unencrypted message: r2
+
+Alice has received nonce from Bob
+Unencrypted message: {r2}ks
+
+Alice is sending nonce reply to Bob
+Unencrypted message: r2 - 1
+
+Bob has received nonce reply from Alice
+Encrypted message: {r2 - 1}ks
+
+Bob is sending a message to Alice
+Unencrypted message: m
+
+Alice has received a message from Bob
+Encrypted message: {m}ks
+
+bash-3.2$ exit
+exit
+
+Script done on Thu Nov 14 21:46:45 2019
